@@ -10,15 +10,44 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="bg"></div>
-        <div class="bg-mask"></div>
-        <div class="player">
-            <div class="player-track">
-                <div class="album-name">合拍</div>
-                <div class="track-name">许嵩 - 合拍</div>
-            </div>
+    <nav id="navbar">
+        <div class="container">
+            <h1>My Lovely</h1>
+            <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="FlexAlbum.html">相册</a></li>
+            <li><a href="MusicPlayer.html">音乐播放器</a></li>
+            <li><a href="load.html">注册/登录</a></li>
+            </ul>
         </div>
-    </div>
+    </nav>
+    <div class="music-container" id="music-container">
+        <div class="music-info">
+          <h4 id="title"></h4>
+          <div class="progress-container" id="progress-container">
+            <div class="progress" id="progress"></div>
+          </div>
+        </div>
+  
+        <audio src="music/Billie Eilish - wish you were gay.flac" id="audio"></audio>
+  
+        <div class="img-container">
+          <img src="img/m2.png" alt="music-cover" id="cover" />
+        </div>
+        <div class="navigation">
+          <button id="prev" class="action-btn">
+            <i class="fas fa-backward"></i>
+          </button>
+          <button id="play" class="action-btn action-btn-big">
+            <i class="fas fa-play"></i>
+          </button>
+          <button id="next" class="action-btn">
+            <i class="fas fa-forward"></i>
+  
+        </div>
+      </div>
+  
+      <script src="script/MusicPlayer.js"></script>
+    </body>
 </body>
 </html>
