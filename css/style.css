@@ -1,0 +1,108 @@
+/* reset */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'montserrat', sans-serif;
+    box-sizing: border-box;
+}
+/* main styling*/
+html,body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7rem;
+}
+a{
+    color: #333;
+    text-decoration: none;
+}
+h1,h2,h3{
+    padding-bottom: 1.5rem;
+}
+p{
+    margin: 0.625rem 0;
+}
+/* utility classees */
+.container{
+    margin: 0 auto;
+    max-width: 1100px;
+    overflow: hidden;
+    padding: 0 1.5rem;
+}
+/* navbar */
+#navbar{
+    background: #333;
+    color: #fff;
+    overflow: auto;
+}
+#navbar a{
+    color: #fff;
+}
+#navbar h1{
+    float: left;
+    padding: 0.9rem 0.6rem;
+}
+#navbar ul{
+    float: right;
+    list-style: none;
+}
+#navbar ul li{
+    float: left;
+}
+#navbar ul li a{
+    display: block;
+    padding: 0.9rem 1.5rem;
+    text-align: center;
+}
+#navbar ul li a:hover{
+    background: #444;
+}
+
+/* showcase */
+#showcase{
+    background: url('../img/01index-showcase.jpg') no-repeat center center/cover;
+    height: 100vh;
+}
+#showcase .showcase-content{
+    color:#fff ;
+    text-align: center;
+    padding-top: 6.25rem;
+    background-color:rgba(190, 186, 186, 0.6);
+}
+#showcase .showcase-content h1{
+    font-size: 4rem;
+    line-height: 1.2em;
+}
+#showcase .showcase-content p{
+    font-size: 1.2rem;
+    line-height: 1.7em;
+    padding-bottom: 0.9rem;
+}
+.btn{
+    display: inline-block;
+    font-size: 1rem;
+    color: #fff;
+    background-color:rgba(0, 0, 0, 0.6);
+    padding: 0.625rem 1.5rem;
+}
+.btn:hover{
+    background-color:rgba(0, 0, 0, 0.4);
+}
+
+/* footer */
+#main-footer{
+    text-align: center;
+    background-color:#333;
+    color: #fff;
+    padding: 0.625rem 0.9rem;
+}
+#main-footer p{
+    padding: 0;
+}
+
+@media screen and (max-width:800px){
+    #showcase .showcase-content h1{
+        font-size:3rem;
+    }
+    #showcase .showcase-content p{
+        font-size: 1rem;
+    }
+}
